@@ -1,0 +1,90 @@
+body {
+    background-color: #000000;
+}
+
+
+.bodytext {
+    color: white;
+    text-align: center;
+}
+
+.navtitle {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+.navcolor {
+    background-color: black;
+}
+/*this is for overriding the link highlighting*/
+.navbar-default .navbar-brand:focus, .navbar-dark .navbar-brand:hover {
+    color: #545b62;
+
+}
+
+
+
+.about-title {
+    text-align: center;
+    color: white;
+}
+
+#about-me {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.about-photo {
+    border-style: solid;
+    border-color: white;
+    border-width: medium;
+    margin-left: 18%;
+    max-width: 65%;
+    height: auto;
+}
+
+.gallery-photo-div {
+    margin-top: 50px;
+    margin-bottom: 75px;
+
+}
+
+.gallery-photo {
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-left: 18%;
+    max-width: 65%;
+    height: auto;
+}
+
+.gallery-photo:hover {
+    opacity: .7;
+
+}
+
+.my-carousel {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 800px;
+    max-height: 500px;
+
+
+}
+
+/*this is for each individual photo in a gallery*/
+/*using object-fit kept the asepct ratio in conjunction with the other sizing
+options */
+.unique{
+    object-fit: scale-down;
+    max-width: auto;
+    max-height: 500px;
+
+
+}
+
+img {
+
+}

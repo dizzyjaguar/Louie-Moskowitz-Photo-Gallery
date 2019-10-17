@@ -1,0 +1,10 @@
+-gallery shows cover photo for a series, clicking on it brings it to the series
+with a screen slide to go through
+
+
+-set a max height on all the photos within a gallery and let the width be determined in
+relation to the photo itself.
+
+-make the book link modal pre-order button bring you to enter your email to be updated
+when the book is about to be released of make a full on true pre-order form with paypal
+--this will be a good opportunity to practice storing data
