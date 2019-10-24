@@ -1,0 +1,13 @@
+<!--to load the image, i needed to load static after the block page_content
+otherwise static wouldn't load -->
+{% extends "photo_gallery/base.html" %}
+{% block page_content %}
+{% load static %}
+<h1 class="about-title"></h1>
+<p id="about-me">
+
+</p>
+<div class="about-photo-div">
+    <img class="about-photo" src="{% static 'photo_gallery/Louies_Profile.jpg' %}" />
+</div>
+{% endblock %}

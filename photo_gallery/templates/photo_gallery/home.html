@@ -1,0 +1,29 @@
+{% extends "photo_gallery/base.html" %}
+{% block page_content %}
+{% load static %}
+
+
+<h1 class="bodytext"></h1>
+<!-- THIS IS THE STATIC VERSION
+<div class="gallery-photo-div">
+    <a href="{% url 'gallery1' %}">
+    <img class="gallery-photo" src="{% static 'photo_gallery/gallery1_image1.jpg' %}" />
+    </a>
+</div>
+-->
+
+
+<!-- create for loop to display all the albums -->
+{% for album in albums %}
+<div class="gallery-photo-div">
+    <div class="gallery_photo-div">
+        <a href="#">
+        <img class="gallery-photo" src="{{ album.cover_image.url }}" />
+        </a>
+    </div>
+</div>
+{% endfor %}
+
+
+
+{% endblock %}
