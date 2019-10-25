@@ -11,11 +11,14 @@ def home(request):
 
 
 #attempt to make model specific gallery page
-def gallery_view(request, pk):
+def gallery_detail(request, pk):
     album = Album.objects.get(pk=pk)
     photos = Photo.objects.filter(album=album)  #this is probably wrong, look into how to get the specific photos for the album to show up
-
-
+    context = {
+        'album': album,
+        'photos': photos
+    }
+    return render(request, 'photo_gallery/gallery_detail.html', context)
 
 
 
