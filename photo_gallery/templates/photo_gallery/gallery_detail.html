@@ -4,13 +4,12 @@
 
 
 <!-- this is not working! im unable to present the photos in the specific gallery -->
-<div id="carousel-gallery-1" class="carousel slide" data-interval="false" data-ride="carousel">
-    <div class="carousel-inner mx-auto my-carousel">
-        {% for photo in photos %}
-        <div class="carousel-item active">
-            <!-- especially this -->
-            <img class="d-block w-100 unique" src="{{ photos.image.url }}">
-        </div>
+
+{% for photo in photos %}
+<div class="gallery-photo-div">
+    <div class="gallery_photo-div">
+        <img class="gallery-photo" src="{{ photo.image.url }}" />
+        </a>
     </div>
 </div>
 {% endfor %}
