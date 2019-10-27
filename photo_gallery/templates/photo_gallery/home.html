@@ -15,6 +15,7 @@
 
 <!-- create for loop to display all the albums -->
 {% for album in albums %}
+<h2 class="bodytext">{{ album.title }}</h2>
 <div class="gallery-photo-div">
     <div class="gallery_photo-div">
         <a href="{% url 'gallery_detail' album.pk %}">
