@@ -1,5 +1,6 @@
+#core django imports
 from django.urls import path
-
+#imports from my apps
 from . import views
 
 urlpatterns = [

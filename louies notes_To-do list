@@ -12,3 +12,11 @@ when the book is about to be released of make a full on true pre-order form with
 -setup a webstore where people can purchase prints with paypal.
 
 -possibly create blog section
+
+
+*Try and follow pep-8,
+*Imports from bottom to top =
+-Standard library Imports
+-Imports from core django
+-Imports from third-party apps
+-Imports from the apps created in your project

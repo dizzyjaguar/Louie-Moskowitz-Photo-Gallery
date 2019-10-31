@@ -1,5 +1,9 @@
+#standard library imports
+
+#core django imports
 from django.db import models
 from django.utils import timezone
+#third party imports
 from PIL import Image
 
 

@@ -1,5 +1,7 @@
+#core django imports
 from django.shortcuts import render
 from django.http import HttpResponse
+#imports from my app
 from photo_gallery.models import Album, Photo
 
 def home(request):
