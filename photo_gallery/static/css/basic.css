@@ -1,0 +1,25 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}
+
+html, body {
+    box-sizing: border-box;
+    background-color: black;
+    height: 100%;
+    padding: 20px;
+    margin: 5px;
+}
+
+.header {}
+
+.space-left {}
+
+.content {}
+
+.space-right {}
+
+.footer {}

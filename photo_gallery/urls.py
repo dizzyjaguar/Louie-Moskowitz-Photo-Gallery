@@ -10,4 +10,5 @@ urlpatterns = [
     path("<int:pk>/", views.gallery_detail, name="gallery_detail"),
     path('about/', views.about, name='about'),
     path('gallery1/', views.gallery1, name='gallery1'),
+    path('contact/', views.contact, name='contact'),
 ]

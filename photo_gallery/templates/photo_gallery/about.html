@@ -3,40 +3,35 @@ otherwise static wouldn't load -->
 {% extends "photo_gallery/base.html" %}
 {% block page_content %}
 {% load static %}
-<h1 class="about-title"></h1>
-
-<div class="container-fluid" id="about-me-div">
-    <div class="row">
-        <div class="col">
-
-            <p id="about-me">
-                <!-- Louies draft idea 1 -->
-                Louie Moskowitz was born into a family of painters and ceramicists,
-                his family moved to Humboldt County in a rural town called Redway.
-                He stated taking pictures when he was 17 and is just getting around to
-                understanding how to photograph his hometown.
-                <!-- Louies draft idea 2 -->
-                Louie Moskowitz is a 26 year old photographer based in Redway, in Humboldt County.
-                He photographs the underdogs of the community rather than the rich pot growers and
-                growers of the region. He chooses to take pictures of the buildings and local hangouts
-                where the true underbelly of the community lies.
-            </p>
-
-            <!-- possibly move this onto its own page
-    or move this with an email form to contact to its own page
-    and instead have the press/showings/interview here under the about me-->
-            <!--
-    <h2> Contact Info </h2>
-    <p>
-        Email: Satchmolouie@gmail.com
-        Instagram: @louie_moskowitz
-    </p>
-            -->
-
-            <div class="about-photo-div">
-                <img class="about-photo" src="{% static 'photo_gallery/Louies_Profile.jpg' %}" />
-            </div>
+<div class="container">
+    <div class="about-me-content">
+        <p>
+            <!-- Louies draft idea 1 -->
+            Louie Moskowitz was born into a family of painters and ceramicists,
+            his family moved to Humboldt County in a rural town called Redway.
+            He stated taking pictures when he was 17 and is just getting around to
+            understanding how to photograph his hometown.
+            <!-- Louies draft idea 2 -->
+            Louie Moskowitz is a 26 year old photographer based in Redway, in Humboldt County.
+            He photographs the underdogs of the community rather than the rich pot growers and
+            growers of the region. He chooses to take pictures of the buildings and local hangouts
+            where the true underbelly of the community lies.
+        </p>
+    </div>
+        <div class="about-photo-div">
+            <img class="about-photo" src="{% static 'photo_gallery/Louies_Profile.jpg' %}" />
         </div>
     </div>
-</div>
-{% endblock %}
+        {% endblock %}
+
+
+        <!-- possibly move this onto its own page
+or move this with an email form to contact to its own page
+and instead have the press/showings/interview here under the about me-->
+        <!--
+<h2> Contact Info </h2>
+<p>
+Email: Satchmolouie@gmail.com
+Instagram: @louie_moskowitz
+</p>
+-->

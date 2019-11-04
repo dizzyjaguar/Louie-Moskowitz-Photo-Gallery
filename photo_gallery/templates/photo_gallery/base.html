@@ -10,15 +10,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- My Custom CSS -->
+    <!-- Main CSS -->
     <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
     <title></title>
 </head>
 
 <body>
-
     <!-- make links hightlight when mouse is over -->
-
     <!-- NAVBAR -->
     <div class="container-fluid w-50 p-3">
         <!-- make collapse at mobile or tablet size with -->
@@ -70,17 +69,12 @@
                         <a class="nav-link text-secondary" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link text-secondary" href="#">Press <span class="sr-only">(current)</span></a>
+                        <a class="nav-link text-secondary" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
         </nav>
-
     </div>
-
-
-
-
 
     <!-- This is where the individual template will render in the order
     ie: this is that templates content and where it will be in comparison to
@@ -89,11 +83,7 @@
     to the rest. -->
     {% block page_content %}{% endblock %}
 
-
-
-
-
-    <div class="card-footer text-center" style="font-size: 12px; font-weight: 3; color:white;">
+    <div class="footer card-footer text-center" style="font-size: 12px; font-weight: 3; color:white;">
         Copyright © 2019 Louie Moskowitz. All rights reserved.
     </div>
 

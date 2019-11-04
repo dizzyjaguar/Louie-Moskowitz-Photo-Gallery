@@ -23,10 +23,12 @@ def gallery_detail(request, pk):
     return render(request, 'photo_gallery/gallery_detail.html', context)
 
 
-
-
 def about(request):
     return render(request, 'photo_gallery/about.html', {})
+
+def contact(request):
+    return render(request, 'photo_gallery/contact.html', {})
+
 
 def gallery1(request):
     return render(request, 'photo_gallery/gallery1.html', {})

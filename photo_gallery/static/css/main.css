@@ -2,6 +2,9 @@ body {
     background-color: #000000;
 }
 
+p {
+    color: white;
+}
 
 .bodytext {
     color: white;
@@ -68,31 +71,21 @@ options */
 
 /* about me stuff */
 
-.about-title {
-    text-align: center;
-    color: white;
-}
 
-
-#about-me-div {
-    max-width: 500px;
-    float: right;
-    margin-top: 100px;
-    
-}
-
-
-#about-me {
-    text-align: center;
-    color: white;
-    font-size: 20px;
-}
 
 .about-photo {
     border-style: solid;
     border-color: white;
     border-width: medium;
-    margin-left: 18%;
-    max-width: 65%;
+
+    max-width: 400px;
     height: auto;
+}
+
+.footer {
+    
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    padding: 5px;
 }
