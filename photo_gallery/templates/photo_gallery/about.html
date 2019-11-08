@@ -4,37 +4,39 @@ otherwise static wouldn't load -->
 {% load static %}
 {% block page_content %}
 <div class="container">
-    <div class="about-me-div">
-        <p>
-            <!-- Louies draft idea 1 -->
-            Louie Moskowitz was born into a family of painters and ceramicists,
-            his family moved to Humboldt County in a rural town called Redway.
-            He stated taking pictures when he was 17 and is just getting around to
-            understanding how to photograph his hometown.
-            <!-- Louies draft idea 2 -->
-            Louie Moskowitz is a 26 year old photographer based in Redway, in Humboldt County.
-            He photographs the underdogs of the community rather than the rich pot growers and
-            growers of the region. He chooses to take pictures of the buildings and local hangouts
-            where the true underbelly of the community lies.
+    <div class="row">
+        <div class="container col-lg order-lg-1 about-me-div">
+            <p>
+                <!-- Louies draft idea 1 -->
+                Louie Moskowitz was born into a family of painters and ceramicists,
+                his family moved to Humboldt County in a rural town called Redway.
+                He stated taking pictures when he was 17 and is just getting around to
+                understanding how to photograph his hometown.
+                <!-- Louies draft idea 2 -->
+                Louie Moskowitz is a 26 year old photographer based in Redway, in Humboldt County.
+                He photographs the underdogs of the community rather than the rich pot growers and
+                growers of the region. He chooses to take pictures of the buildings and local hangouts
+                where the true underbelly of the community lies.
 
-            He always was an avid corn eater, he always tried to eat it for almost every meal.
-            At some point in his career someone suggested that he try a new food like oregano but
-            that ended up not happening. Any way that was just the begining of his career.  This drew
-            a large amount of inspiration in his photography and thats why he mostly takes photos of
-            vegetables.
-        </p>
-    </div>
-        <div class="about-photo-div">
+                He always was an avid corn eater, he always tried to eat it for almost every meal.
+                At some point in his career someone suggested that he try a new food like oregano but
+                that ended up not happening. Any way that was just the begining of his career. This drew
+                a large amount of inspiration in his photography and thats why he mostly takes photos of
+                vegetables.
+            </p>
+        </div>
+        <div class="container col-md-8 align-self-center about-photo-div">
             <img class="about-photo" src="{% static 'photo_gallery/Louies_Profile.jpg' %}" />
         </div>
     </div>
-        {% endblock %}
+</div>
+{% endblock %}
 
 
-        <!-- possibly move this onto its own page
+<!-- possibly move this onto its own page
 or move this with an email form to contact to its own page
 and instead have the press/showings/interview here under the about me-->
-        <!--
+<!--
 <h2> Contact Info </h2>
 <p>
 Email: Satchmolouie@gmail.com
