@@ -4,6 +4,7 @@ otherwise static wouldn't load -->
 {% load static %}
 {% block page_content %}
 <div class="container mt-5 ">
+    <div class="row">
         <div class="container my-auto col-lg order-lg-1 about-me-div">
             <p>
                 <!-- Draft 2 -->
@@ -15,6 +16,7 @@ otherwise static wouldn't load -->
         </div>
         <div class="container col-8 align-self-center about-photo-div">
             <img class="about-photo" src="{% static 'photo_gallery/Louies_Profile.jpg' %}" />
+        </div>
         </div>
 </div>
 {% endblock %}
