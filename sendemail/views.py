@@ -20,4 +20,4 @@ def emailView(request):
     return render(request, "email.html", {'form': form})
 
 def successView(request):
-    return HttpResponse('Success! Thank you for message.')
+    return HttpResponse('Success! Thank you for the message.')
