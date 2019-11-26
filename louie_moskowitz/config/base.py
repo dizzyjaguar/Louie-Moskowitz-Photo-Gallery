@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'photo_gallery',
     'sendemail.apps.SendemailConfig',
+    'prints',
 ]
 
 MIDDLEWARE = [

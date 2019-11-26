@@ -23,6 +23,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('photo_gallery.urls')),
     path('', include('sendemail.urls')),
+    path('', include('prints.urls')),
 ]
 
 
