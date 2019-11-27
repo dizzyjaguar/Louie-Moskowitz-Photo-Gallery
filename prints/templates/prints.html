@@ -1,18 +1,22 @@
 {% extends "photo_gallery/base.html" %}
 {% load static %}
 {% block page_content %}
-
+<h1 class="bodytext text-center m-5" style="font-size: 2.75rem;"><u>Prints For Sale</u></h1>
 <div class="row">
 {% for print in prints %}
 <div class="col-md-4">
-<div class="card mb-2">
+<div class="card mb-2 mx-2">
     <img class="card-img-top" src="{{ print.image.url }}" />
     <div class="card-body">
-        <h5 class="card-title">{{ print.title }}</h5>
-        <p class="card-text text-info">${{ print.price }}</p>
+        <h5 class="card-title text-center">{{ print.title }}</h5>
+        <p class="card-text text-info text-center">${{ print.price }}</p>
+        <button type="button" class="btn btn-dark">Purchase</button>
     </div>
 </div>
 </div>
 {% endfor %}
+
 </div>
 {% endblock %}
+<!-- Make a Bootstrap Modal that Displays an email form with already entered
+    information on the selected print for sale when pressing the Purchase button. -->
