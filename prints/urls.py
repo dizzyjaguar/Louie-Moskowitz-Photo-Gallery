@@ -5,5 +5,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-path('', views.prints, name='prints'),
+path('prints/', views.prints, name='prints'),
 ]
