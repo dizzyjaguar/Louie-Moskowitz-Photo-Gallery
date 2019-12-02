@@ -20,3 +20,12 @@ def printEmail(request):
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['from_email']
             message = form.cleaned_data['message']
+            try:
+                send_mail(subject, message, from_email, ['dizzyjaguar@gmail.com'])
+            except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+            return redirect('success')
+    return render(request, "inquiry.html", {'form': form})
+
+def successView(request):
+    return HttpResponse('Success! Thank you for the message.')

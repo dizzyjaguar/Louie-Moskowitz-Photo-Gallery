@@ -1,4 +1,5 @@
 {% extends "photo_gallery/base.html" %}
+{% load crispy_forms_tags %}
 {% load static %}
 {% block page_content %}
 <h1 class="bodytext text-center m-5" style="font-size: 2.75rem;"><u>Prints For Sale</u></h1>
@@ -10,10 +11,32 @@
     <div class="card-body">
         <h5 class="card-title text-center">{{ print.title }}</h5>
         <p class="card-text text-info text-center">${{ print.price }}</p>
-        <button type="button" class="btn btn-dark">Purchase</button>
+        <a href="{% url 'inquiry' %}"><button type="button" class="btn btn-dark">Purchase</button></a>
     </div>
 </div>
 </div>
+
+<!-- modal -->
+<!-- THIS CURRENTLY IS NOT WORKING
+<div class="modal fade" id="modalPurchasePrint" tabindex="-1" role="dialog" aria-labelledby="modalPurchasePrint" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content bg-light">
+            <form id="PrintForm"method="post">
+                {% csrf_token %}
+                {{ form|crispy }}
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-outline-light">Send</button>
+                </div>
+            </form>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+-->
+
+
 {% endfor %}
 
 </div>
