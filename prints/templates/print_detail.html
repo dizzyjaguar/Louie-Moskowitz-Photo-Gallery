@@ -1,0 +1,11 @@
+{% extends "photo_gallery/base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+{% block page_content %}
+
+<div class="gallery-photo-div">
+    <div class="gallery_photo-div">
+        <img class="gallery-photo" src="{{ print_object.image.url }}" />
+    </div>
+</div>
+{% endblock %}

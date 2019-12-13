@@ -8,4 +8,5 @@ from .views import printEmail, successView
 urlpatterns = [
 path('prints/', views.prints, name='prints'),
 path('inquiry/', printEmail, name='inquiry'),
+path('prints/<int:print_id>', views.print_detail, name='print-detail'),
 ]

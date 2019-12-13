@@ -11,6 +11,13 @@ def prints(request):
     }
     return render(request, 'prints.html', context)
 
+def print_detail(request, print_id):
+    print_object = Print.objects.get(pk=print_id)
+    context = {
+        'print_object': print_object
+    }
+    return render(request, 'print_detail.html', context)
+
 def printEmail(request):
     if request.method == 'GET':
         form = PrintForm()
