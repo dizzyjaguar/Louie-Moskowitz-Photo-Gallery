@@ -5,7 +5,7 @@ DEBUG = False
 
 logging.basicConfig(level=logging.INFO)
 
-ALLOWED_HOSTS = ['louie-gallery.herokuapp.com']
+ALLOWED_HOSTS = ['louie-gallery.herokuapp.com', 'www.louiemoskowitz.com']
 
 DATABASES['default']['OPTIONS'] = {'sslmode': 'require'}
 
