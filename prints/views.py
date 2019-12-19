@@ -13,9 +13,9 @@ def prints(request):
 
 def print_detail(request, print_id):
     print_object = Print.objects.get(pk=print_id)
-
+    title = print_object.title
     if request.method == 'GET':
-        form = PrintForm()
+        form = PrintForm(initial={'subject': 'Im interested in purchasing {}.'.format(title) })
     else:
         form = PrintForm(request.POST)
         if form.is_valid():
@@ -30,7 +30,7 @@ def print_detail(request, print_id):
 
     context = {
         'print_object': print_object,
-        'form': form
+        'form': form,
     }
     return render(request, 'print_detail.html', context)
 
