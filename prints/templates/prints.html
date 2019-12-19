@@ -11,8 +11,7 @@
     <div class="card-body">
         <h5 class="card-title text-center">{{ print.title }}</h5>
         <p class="card-text text-info text-center">${{ print.price }}</p>
-        <a href="{% url 'inquiry' %}"><button type="button" class="btn btn-dark">Purchase</button></a>
-        <a href="{% url 'print-detail' print.pk %}"><button type="button" class="btn btn-dark">view</button></a>
+        <a href="{% url 'print-detail' print.pk %}"><button type="button" class="btn btn-dark">Purchase</button></a>
     </div>
 </div>
 </div>

@@ -8,4 +8,17 @@
         <img class="gallery-photo" src="{{ print_object.image.url }}" />
     </div>
 </div>
+
+<div class="card mx-auto" style="max-width: 30rem; background-color: #000;">
+    <div class="card-body" style="color: #fff;">
+        <h1 class="card-title text-center">Print Inquiry</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <div class="form-actions">
+                <button type="submit" class="btn btn-outline-light">Send</button>
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock %}

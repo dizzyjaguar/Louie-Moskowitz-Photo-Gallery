@@ -20,3 +20,7 @@ when the book is about to be released of make a full on true pre-order form with
 -Imports from core django
 -Imports from third-party apps
 -Imports from the apps created in your project
+
+
+-make louie an admin login so he could upload
+and edit content etc.
